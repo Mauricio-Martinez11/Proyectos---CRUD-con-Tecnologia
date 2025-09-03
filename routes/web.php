@@ -8,6 +8,7 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
+//Rutas:
 // Rutas para Usuarios
 Route::resource('usuarios', UsuarioController::class);
 
