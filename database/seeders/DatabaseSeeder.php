@@ -5,7 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Usuario;
 use App\Models\Transportista;
-
+use App\Models\Vehiculo;
+use App\Models\Producto;
 
 class DatabaseSeeder extends Seeder
 {
@@ -48,6 +49,49 @@ class DatabaseSeeder extends Seeder
             'activo' => true,
         ]);
 
+        // Crear vehículos de prueba
+        Vehiculo::create([
+            'transportista_id' => 1,
+            'placa' => 'ABC123',
+            'tipo' => 'camion',
+            'capacidad_kg' => 5000,
+            'activo' => true,
+        ]);
 
+        Vehiculo::create([
+            'transportista_id' => 2,
+            'placa' => 'XYZ789',
+            'tipo' => 'camioneta',
+            'capacidad_kg' => 1000,
+            'activo' => true,
+        ]);
+
+        // Crear productos de prueba
+        Producto::create([
+            'nombre' => 'Manzanas',
+            'tipo' => 'fruta',
+            'unidad' => 'kg',
+            'precio_unitario' => 2.50,
+            'stock' => 100.5,
+            'activo' => true,
+        ]);
+
+        Producto::create([
+            'nombre' => 'Zanahorias',
+            'tipo' => 'verdura',
+            'unidad' => 'kg',
+            'precio_unitario' => 1.80,
+            'stock' => 75.2,
+            'activo' => true,
+        ]);
+
+        Producto::create([
+            'nombre' => 'Plátanos',
+            'tipo' => 'fruta',
+            'unidad' => 'kg',
+            'precio_unitario' => 1.20,
+            'stock' => 200.0,
+            'activo' => true,
+        ]);
     }
 }

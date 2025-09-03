@@ -97,6 +97,18 @@
                                 <p>Transportistas</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/vehiculos') }}" class="nav-link">
+                                <i class="nav-icon fas fa-car"></i>
+                                <p>Vehículos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/productos') }}" class="nav-link">
+                                <i class="nav-icon fas fa-box"></i>
+                                <p>Productos</p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

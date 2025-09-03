@@ -5,27 +5,24 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Transportista extends Model
+class Producto extends Model
 {
     use HasFactory;
 
-    protected $table = 'transportistas';
+    protected $table = 'products';
     
     protected $fillable = [
         'nombre',
-        'telefono',
-        'licencia',
-        'empresa',
+        'tipo',
+        'unidad',
+        'precio_unitario',
+        'stock',
         'activo'
     ];
 
     protected $casts = [
         'activo' => 'boolean',
+        'precio_unitario' => 'decimal:2',
+        'stock' => 'decimal:3',
     ];
-
-    // Relación con vehículos
-    public function vehiculos()
-    {
-        return $this->hasMany(Vehiculo::class);
-    }
 }

@@ -331,6 +331,16 @@ return [
             'url' => '/transportistas',
             'icon' => 'fas fa-fw fa-truck',
         ],
+        [
+            'text' => 'Vehículos',
+            'url' => '/vehiculos',
+            'icon' => 'fas fa-fw fa-car',
+        ],
+        [
+            'text' => 'Productos',
+            'url' => '/productos',
+            'icon' => 'fas fa-fw fa-box',
+        ],
     ],
 
     /*
